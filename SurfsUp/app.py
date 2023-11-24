@@ -126,6 +126,9 @@ def dynamic(start = 0, end = 0):
     #Return a JSON representation of the list
     return jsonify(dynamic_tobs)
 
+#Close Session
+session.close()
+
 #App Run Statement
 if __name__ == "__main__":
     app.run(debug=True)
